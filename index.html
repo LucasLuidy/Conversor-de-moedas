@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanças Globais</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">
+                <i class="fas fa-globe"></i>
+                Finanças Globais
+            </div>
+            <ul id="menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#converter">Conversor</a></li>
+                <li><a href="#features">Recursos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div id="mobile-menu-toggle">
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Bem-vindo às Finanças Globais</h1>
+                <p>Sua fonte confiável para conversão de moedas e informações financeiras internacionais.</p>
+                <a href="#converter" class="cta-button">Começar a Converter</a>
+            </div>
+        </section>
+
+        <section id="converter">
+            <div class="container">
+                <div class="card converter-card">
+                    <h2>Conversor de Moedas</h2>
+                    <div class="converter-grid">
+                        <div class="input-group amount-group">
+                            <label for="amount">Valor</label>
+                            <div class="input-wrapper">
+                                <input type="number" id="amount" value="1" min="0" step="0.01">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="from-currency">De</label>
+                            <div class="select-wrapper">
+                                <select id="from-currency">
+                                    <option value="BRL">🇧🇷 BRL</option>
+                                    <option value="NPR">🇳🇵 NPR</option>
+                                    <option value="USD">🇺🇸 USD</option>
+                                    <option value="EUR">🇪🇺 EUR</option>
+                                    <option value="GBP">🇬🇧 GBP</option>
+                                    <option value="JPY">🇯🇵 JPY</option>
+                                    <option value="CNY">🇨🇳 CNY</option>
+                                    <option value="AUD">🇦🇺 AUD</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="swap-button">
+                            <button id="swap-currencies">
+                                <i class="fas fa-exchange-alt"></i>
+                            </button>
+                        </div>
+                        <div class="input-group">
+                            <label for="to-currency">Para</label>
+                            <div class="select-wrapper">
+                                <select id="to-currency">
+                                    <option value="USD">🇺🇸 USD</option>
+                                    <option value="EUR">🇪🇺 EUR</option>
+                                    <option value="BRL">🇧🇷 BRL</option>
+                                    <option value="GBP">🇬🇧 GBP</option>
+                                    <option value="JPY">🇯🇵 JPY</option>
+                                    <option value="CNY">🇨🇳 CNY</option>
+                                    <option value="AUD">🇦🇺 AUD</option>
+                                    <option value="NPR">🇳🇵 NPR</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="result" class="result">
+                        <span id="from-amount">1 BRL</span> = <span id="to-amount">0.19 USD</span>
+                    </div>
+                    <button id="convert-btn" class="convert-btn">Converter</button>
+                    <div class="last-updated">
+                        Última atualização: <span id="last-updated-time">Há 5 minutos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Por que escolher Finanças Globais?</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3>Atualizações em Tempo Real</h3>
+                        <p>Nossas taxas de câmbio são atualizadas constantemente para garantir precisão.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Segurança Garantida</h3>
+                        <p>Suas transações e dados pessoais estão protegidos com a mais alta segurança.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Análises Avançadas</h3>
+                        <p>Oferecemos insights e análises de tendências do mercado financeiro global.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Acesso em Qualquer Lugar</h3>
+                        <p>Use nossos serviços em qualquer dispositivo, a qualquer momento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2>Conecte-se com as Finanças Globais</h2>
+                        <p>Estamos aqui para ajudar você a navegar pelo mundo das finanças internacionais.</p>
+                        <div class="contact-details">
+                            <p><strong>Nome:</strong> Equipe Finanças Globais</p>
+                            <p><strong>Endereço:</strong> São Paulo, Brasil</p>
+                            <p><strong>Telefone:</strong> +55 11 1234-5678</p>
+                            <p><strong>Horário:</strong> 24h - 7 dias por semana</p>
+                        </div>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="input-group">
+                            <input type="text" id="name" name="name" placeholder="Nome" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="subject" name="subject" placeholder="Assunto" required>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" name="message" placeholder="Mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Sobre Nós</h3>
+                    <p>Finanças Globais é sua plataforma <br> confiável para conversão de moedas <br> e informações financeiras <br> internacionais.</p>
+                </div>
+                <div class="footer-section services">
+                    <h3>Nossos Serviços</h3>
+                    <ul>
+                        <li>Conversão de Moedas em Tempo Real <br> Análise de Mercado Financeiro <br> Alertas de Taxa de Câmbio <br> Consultoria Financeira Internacional</li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3>Fique por Dentro</h3>
+                    <p>Inscreva-se para receber as últimas notícias e atualizações.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <button type="submit">Inscrever-se</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Finanças Globais. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
